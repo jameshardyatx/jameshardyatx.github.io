@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Magic Item Cost Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <h1>Magic Item Cost Calculator</h1>
+
+        <div class="dataBox">
+            <strong>Charisma Score</strong>
+                <input type="number" value="10" class="charScore">
+        </div>
+
+        <div class="dataBox">
+            <strong>Proficiency Bonus</strong>
+                <input type="number" value="2" class="profBonus">
+        </div>
+
+        <div class="dataBox">
+            <strong>Proficient in Persuasion?</strong>
+                <input type="checkbox" class="isProf">
+        </div>
+
+        <div class="dataBox">
+            <strong>Item Rarity</strong>
+                <select name="rarity" class="rarity">
+                    <option value="1">Common</option>
+                    <option value="2">Uncommon</option>
+                    <option value="3">Rare</option>
+                    <option value="4">Very Rare</option>
+                </select>
+        </div>
+
+        <button class="rollButton">Roll!</button>
+
+        <div class="dataBox">
+            <strong>You rolled: <em class="rollResult"></em></strong>
+        </div>
+
+        <div class="dataBox">
+            <strong>Cost before haggling: <em class="preTotal"></em></strong>
+            <strong>Total Cost: <em class="totalGP"></em></strong>
+        </div>
+
+    </main>
+	<script src="js/index.js"></script>
+  </body>
+</html>
