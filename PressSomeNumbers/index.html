@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Press Some Numbers!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  </head>
+  <body>
+
+    <div class="wrapper">
+        <div id="col1"></div>
+        <div id="col2"></div>
+        <div id="col3"></div>
+    </div>
+
+    <div class="scoreWrapper">
+        <div class="label">score</div>
+        <div class="score" id="scoreCount"></div>
+    </div>
+
+    <div class="info">
+        Highscore:
+        <div id="highScore"></div>
+        <br>
+        Best Streak:
+        <div id="bestStreak"></div>
+        <br>
+        Current Streak:
+        <div id= "currentStreak"></div>
+    </div>
+
+      <div class="tutorial">
+        <div class="infoButton" id="tutorialDropdown">❔ Help/Settings</div>
+        <div class="infoBox hidden" id="infobox">
+          <ul>
+            How to Play
+            <span id="close">❌</span>
+            <li>
+              Press the key in the middle of the screen to get points
+            </li>
+            <li>
+              The score will tick down over time, so go fast!
+            </li>
+            <li>
+              Pressing the wrong key lowers your score
+            </li>
+            <li>
+              Check your highscore and best streak in the top left
+            </li>
+            <li>
+              Try using the numpad or your top number row
+            </li>
+          </ul>
+          <div id="reset">RESET HIGHSCORE/STREAK</div>
+        </div>
+      </div>
+
+      <div id="goalReached" class="hidden">Timer Increased!</div>
+      
+	<script src="game.js"></script>
+  </body>
+</html>
